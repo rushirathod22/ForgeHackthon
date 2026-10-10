@@ -63,6 +63,10 @@ EVENT_SYNONYMS = {
         "suspicious entry", "unguarded entry", "entered while guard",
         "entered when guard", "suspicious person entered",
     ],
+    "SHOPLIFTING": [
+        "shoplifting", "shoplift", "theft", "stealing", "steal", "thief",
+        "pocketing", "concealing", "concealment", "putting in bag", "hiding item",
+    ],
 }
 
 VISUAL_ATTRIBUTES = [
@@ -296,6 +300,10 @@ TYPO_FIXES: list[tuple[re.Pattern, str]] = [
     (re.compile(r"\bblu\b", re.I), "blue"),
     (re.compile(r"\bblck\b", re.I), "black"),
     (re.compile(r"\bwht\b", re.I), "white"),
+    (re.compile(r"\bshopliftng\b", re.I), "shoplifting"),
+    (re.compile(r"\bshoplfting\b", re.I), "shoplifting"),
+    (re.compile(r"\bthefet\b", re.I), "theft"),
+    (re.compile(r"\bsteeling\b", re.I), "stealing"),
 ]
 
 
