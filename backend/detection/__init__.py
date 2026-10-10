@@ -1,0 +1,1 @@
+"""CCTV video detection components."""

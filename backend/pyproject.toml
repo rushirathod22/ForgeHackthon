@@ -1,0 +1,23 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Ask My CCTV Backend Service"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "opencv-python>=4.10.0",
+    "ultralytics>=8.4.121",
+    "pytest>=9.1.1",
+    "sqlalchemy>=2.0.0",
+    "pydantic>=2.0.0",
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "httpx>=0.27.0",
+    "python-multipart>=0.0.9",
+    "transformers>=5.17.0",
+    "pillow>=12.3.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
